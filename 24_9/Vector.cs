@@ -25,11 +25,14 @@ namespace _24_9
             return vR;
         }
 
-        public static Vector Parse(int vx, int vy)
+        public static Vector Parse(string s)
         {
+            string[] subs = s.Split(',', ' ');
+
+            
             Vector v = new Vector();
-            v.vx = vx;
-            v.vy = vy;
+            v.vx = int.Parse(subs[0]);
+            v.vy = int.Parse(subs[2]);
             return v;
         }
     }

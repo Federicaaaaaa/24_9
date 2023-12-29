@@ -10,9 +10,9 @@ namespace _24_9
     {
         static void Main(string[] args)
         {
-            Vector v1 = Vector.Parse(2, 2);
-            Vector v2 = Vector.Parse(3, 3);
-            Vector v3 = Vector.Parse(4, 4);
+            Vector v1 = Vector.Parse("2, 2");
+            Vector v2 = Vector.Parse("3, 3");
+            Vector v3 = Vector.Parse("4, 4");
 
             Vector vS = v1.Somma(v2);
             Console.WriteLine("{0}; {1}", v1.vx, v1.vy);
